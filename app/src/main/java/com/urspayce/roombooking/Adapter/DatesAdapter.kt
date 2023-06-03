@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
+import android.widget.EditText
 import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -68,6 +70,10 @@ class DatesAdapter(
         dialog!!.setContentView(R.layout.edit_item_dialog_layout)
         dialog!!.window!!.setBackgroundDrawableResource(R.color.blacktrans);
         dialog!!.show()
+        var closeIv = dialog!!.findViewById(R.id.closeIv) as ImageView
+        closeIv.setOnClickListener {
+            dialog.dismiss()
+        }
         val window = dialog!!.window
         window!!.setLayout(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT

@@ -51,6 +51,7 @@
 
 
                     <ImageView
+                        android:id="@+id/closeIv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -68,9 +69,9 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
                     android:text="Time" />
 
 
@@ -117,9 +118,9 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
                     android:text="Room" />
 
 
@@ -149,9 +150,9 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
                     android:text="Guests" />
 
 
@@ -187,7 +188,6 @@
                 android:layout_marginBottom="20sp"
                 android:background="@drawable/button_selector"
                 android:elevation="10dp"
-                android:fontFamily="@font/poppins_regular"
                 android:paddingHorizontal="25sp"
                 android:stateListAnimator="@null"
                 android:text="Save"

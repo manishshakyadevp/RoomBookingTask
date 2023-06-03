@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.os.Bundle
 import android.view.Window
 import android.widget.FrameLayout
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
@@ -60,6 +61,10 @@ class ConferenceRoomActivity2 : AppCompatActivity() {
         dialog!!.setContentView(R.layout.edit_item_dialog_layout2)
         dialog!!.window!!.setBackgroundDrawableResource(R.color.blacktrans);
         dialog!!.show()
+        var closeIv = dialog!!.findViewById(R.id.closeIv) as ImageView
+        closeIv.setOnClickListener {
+            dialog.dismiss()
+        }
         val window = dialog!!.window
         window!!.setLayout(
             FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT

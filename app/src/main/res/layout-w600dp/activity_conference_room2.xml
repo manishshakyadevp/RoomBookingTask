@@ -129,7 +129,6 @@
                                 android:layout_margin="15sp"
                                 android:background="@drawable/button_selector_red"
                                 android:elevation="10dp"
-                                android:fontFamily="@font/poppins_regular"
                                 android:gravity="center"
                                 android:padding="10sp"
                                 android:stateListAnimator="@null"
