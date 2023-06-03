@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Room Booking</string>
+    <string name="welcome_to_urspayce_rooms">Welcome to UrSpayce Rooms</string>
+    <string name="pair_device">Pair Device</string>
+</resources>

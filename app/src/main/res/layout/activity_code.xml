@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.CodeActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="This is your paring code"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/codeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                android:fontFamily="@font/poppins_regular"
+                android:letterSpacing="0.4"
+                android:text="YX2THO"
+                android:textAlignment="center"
+                android:textColor="@color/button_color"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Type this code to the device setup page:\nhttps://dashboard.urspayce.com/rooms/activate"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <include layout="@layout/powered_by_layout" />
+
+    </RelativeLayout>
+</layout>
